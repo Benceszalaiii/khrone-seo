@@ -117,12 +117,12 @@
     @apply border-border outline-ring/50 transition-all duration-500 ease-in-out;
   }
   .glass-container {
-    @apply bg-white/20 hover:border-t-violet-400 hover:border-violet-500 hover:border-b-violet-600 shadow-lg ring-1 ring-white/10 border rounded-3xl p-4;
+    @apply bg-white/20 hover:border-t-violet-400 truncate group-hover:transition-normal hover:border-violet-500 hover:border-b-violet-600 group-hover:border-t-violet-400 group-hover:border-violet-500 group-hover:border-b-violet-600 shadow-lg ring-1 group-hover:ring-0 ring-white/10 border rounded-3xl p-4;
   }
   .nav-link {
     @apply text-white hover:text-white/50 duration-300 ;
   }
   body {
-    @apply text-foreground;
+    @apply text-foreground selection:bg-transparent selection:text-purple-600;
   }
 }
